@@ -372,6 +372,9 @@ class Player():
         self.discard = []
         self.aside = []
         self.hold = []
+
+        #Error 2: Changed range(5) to range(1) so that they draw one card per turn
+        #The change is reverted back after testing
         for i in range(5):
             self.draw()
 
@@ -436,6 +439,9 @@ class Player():
         self.played = []
         self.hand = []
         self.aside = []
+
+        #Error 2: Changed range(5) to range(1) so that they draw one card per turn
+        #The change is reverted back after testing
         for i in range(5):
             self.draw()
 
@@ -573,6 +579,9 @@ class ComputerPlayer(Player):
         self.played = []
         self.hand = []
         self.aside = []
+
+        #Error 2: Changed range(5) to range(1) so that they draw one card per turn
+        #The change is reverted back after testing
         for i in range(5):
             self.draw()
     
@@ -682,6 +691,9 @@ class TablePlayer(ComputerPlayer):
         self.played = []
         self.hand = []
         self.aside = []
+
+        #Error 2: Changed range(5) to range(1) so that they draw one card per turn
+        #The change is reverted back after testing
         for i in range(5):
             self.draw()
     
